@@ -106,7 +106,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
     background: rgba(73, 74, 79, 1.0);
     overflow: hidden;
 }
@@ -310,7 +309,7 @@ section>.header-divider {
 
 #skills-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-auto-rows: 100%;
     padding: 0 20% 0 20%;
 }
@@ -498,9 +497,33 @@ section>.header-divider {
     font-size: 1.25em;
 }
 
-#copyright {
+#attributions>header {
     font-size: 1.25em;
+}
+
+#attributions>ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.attribution {
+    --link-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.attribution a {
+    color: var(--link-color, white);
+}
+
+.attribution a:checked {
+    color: var(--link-color, white);
+}
+
+#copyright {
+    font-size: 1.15em;
     font-weight: normal;
+    text-align: right;
     padding: 0;
     margin: 1% 0 0 0;
 }
