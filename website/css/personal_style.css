@@ -101,12 +101,13 @@ body {
     font-size: 1.5em;
 }
 
-nav {
+#navbar {
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    background: rgb(73, 74, 79);
+    background: rgba(73, 74, 79, 1.0);
     overflow: hidden;
 }
 
@@ -116,6 +117,18 @@ nav {
     text-decoration: none;
     color: white;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.translucent {
+    /* background: rgba(73, 74, 79, 0.75) !important; */
+    opacity: 0.75;
+}
+
 
 main {
     width: 100%;
