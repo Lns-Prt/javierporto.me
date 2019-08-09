@@ -13,22 +13,45 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
+    .skills-entry {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-entry {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #education-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #interests-list>li {
+        display: block !important;
+        margin: 5% 0 5% 0 !important;
+    }
+
+    .interests-img {
+        max-width: 15% !important;
+        height: auto !important;
+    }
 }
 
 #website-header {
-    background: linear-gradient( 180deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.9));
+    /* background: linear-gradient( 180deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.9)); */
+    background-image: url("../img/header_background_1.png");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
     display: flex;
     width: 100%;
     height: 100%;
     padding: 7.5% 0 10px 0;
     margin-bottom: 0;
     justify-content: center;
-    /*
-    background-image: url("../img/background_crop.png");
-    background-repeat: no-repeat;
-    background-color: black;
-    background-size: cover;
-    */
 }
 
 #profile {
@@ -45,7 +68,7 @@ body {
     max-width: 30%;
     height: auto;
     border-style: solid;
-    border-color: black;
+    border-color: grey;
     border-width: medium;
     border-radius: 50%;
 }
@@ -69,7 +92,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin: auto;
-    background: rgb(100, 100, 100);
+    background: rgb(73, 74, 79);
     overflow: hidden;
 }
 
@@ -95,9 +118,15 @@ main>article {
     font-weight: bold;
 }
 
-.header-divider {
+article>.header-divider {
     max-width: 80%;
-    margin-top: 25px;
+    margin-top: 2.5%;
+}
+
+section>.header-divider {
+    max-width: 80%;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
 }
 
 .section-header {
@@ -105,7 +134,7 @@ main>article {
     font-weight: bold;
 }
 
-.about-me-description {
+.section-desc {
     font-size: 1.25em;
     line-height: 1.75em;
 }
@@ -131,6 +160,11 @@ main>article {
     align-items: center;
     max-width: 30%;
     padding: 5px 1% 5px 1%;
+}
+
+.projects-entry a {
+    display: inline;
+    text-decoration: none;
 }
 
 .projects-entry-img {
@@ -177,46 +211,224 @@ main>article {
 
 #about-me>header {
     color: white;
+    margin-bottom: 7.5%;
 }
 
 #about-me>section {
-    padding: 2.5% 5% 2.5% 5%;
+    padding: 4.5% 5% 2.5% 5%;
 }
 
 #about-me .odd-section {
-    background-color: rgb(23,21,24);
+    background-color: rgba(23,21,24, 1.0);
     color: white;
 }
 
 #about-me .even-section {
-    background-color: rgb(235, 235, 235);
+    /*background-color: rgb(235, 235, 235);*/
+    background-color: rgba(255, 255, 255, 1.0);
     color: black;
 }
 
-#personal>p {
-    max-width: 65%;
+#personal-content {
+    padding: 0 7.5% 0 7.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#personal-desc {
+    margin-right: 5%;
     text-align: justify;
 }
 
-#interests>p {
-    text-align: justify;
+#personal-content>img {
+    max-width: 40%;
+    height: auto;
+    margin-top: 2%;
+    border-radius: 2.5%;
 }
 
-#interests-list {
+#skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100%;
+    padding: 0 20% 0 20%;
+}
+
+.skills-entry {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.skills-entry-title {
+    grid-column: title;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-entry-header {
+    grid-column: description;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.skills-entry-img {
+    max-width: 40%;
+    height: auto;
+}
+
+.skills-entry-desc {
+    align-self: center;
+    font-size: 1.15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100%;
+    padding: 0 15% 0 15%;
+}
+
+.experience-entry {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.experience-entry-title {
+    grid-column: title;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-entry-header {
+    grid-column: description;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1.25%;
+}
+
+.experience-entry-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.experience-entry-period {
+    margin-bottom: 1.25%;
+}
+
+.experience-entry-desc {
+    align-self: center;
+    font-size: 1.15em;
+    text-align: center;
+}
+
+#education {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#education-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.education-entry {
+    display: flex;
+    max-width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.education-entry-img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 5%;
+    background-color: white;
+    margin-bottom: 5%;
+}
+
+.education-entry-header {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.education-entry-entity {
+    font-size: 1.15em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.experience-entry-period {
+    margin-bottom: 1.25%;
+}
+
+#interests-desc {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: justify;
+    margin-bottom: 2.5%;
+}
+
+.interests-list {
     padding-left: 0;
     list-style: none;
+    margin-top: 2.5%;
+}
+
+.interests-list>li {
+    display: inline;
+    margin: 0 2.5% 0 2.5%;
+}
+
+.interests-img {
+    max-width: 7.5%;
+    height: auto;
 }
 
 #website-footer {
     margin-top: 0;
     padding: 3.5% 5% 1% 5%;
-    background-color: rgb(100, 100, 100);
+    /*background-color: rgb(43, 45, 66);*/
+    background: linear-gradient(180deg, rgba(43, 45, 66, 0.85), rgba(33, 35, 56, 0.95));
     text-align: center;
     color: white;
 }
 
 #contact>p {
     font-size: 1.5em;
+}
+
+#social-media-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#social-media-list>li {
+    display: inline;
+    margin: 0 0.25% 0 0.25%;
+}
+
+.contact-icon {
+    max-width: 2.5%;
+    height: auto;
 }
 
 #techs-and-tools {
