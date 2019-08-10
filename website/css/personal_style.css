@@ -5,56 +5,6 @@ body {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 600px) {
-    #navbar {
-        flex-direction: column;
-    }
-
-    .arrow {
-        border-width: 0 8px 8px 0 !important;
-        padding: 8px !important;
-    }
-
-    #projects-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skills-entry {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .experience-entry {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #education-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #interests-list>li {
-        display: block !important;
-        margin: 5% 0 5% 0 !important;
-    }
-
-    .interests-img {
-        max-width: 15% !important;
-        height: auto !important;
-    }
-
-    .contact-icon {
-        max-width: 7.5% !important;
-        height: auto !important;
-    }
-
-    #social-media-list>li {
-        margin: 0 1.5% 0 1.5% !important;
-    }
-}
-
 #website-header {
     /* background: linear-gradient( 180deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.9)); */
     background-image: url("../img/header_background.png");
@@ -89,17 +39,17 @@ body {
 }
 
 #profile-name {
-    font-size: 2.25em;
+    font-size: 2vw;
     margin-bottom: 0;
 }
 
 #profile-header {
-    font-size: 1.75em;
+    font-size: 1.75vw;
     margin-bottom: 0;
 }
 
 #profile-description {
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 
 #navbar {
@@ -113,7 +63,7 @@ body {
 
 .nav-link {
     padding: 20px 20px 20px 20px;
-    font-size: 25px;
+    font-size: 1.3vw;
     text-decoration: none;
     color: white;
 }
@@ -145,7 +95,7 @@ main>article {
 }
 
 .article-header {
-    font-size: 3em;
+    font-size: 3.25vw;
     font-weight: bold;
 }
 
@@ -161,12 +111,12 @@ section>.header-divider {
 }
 
 .section-header {
-    font-size: 2em;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 
 .section-desc {
-    font-size: 1.25em;
+    font-size: 1.15vw;
     line-height: 1.75em;
 }
 
@@ -182,19 +132,19 @@ section>.header-divider {
 
 #content-intro>header {
     max-width: 50%;
-    font-size: 2.25em;
+    font-size: 2vw;
     font-weight: bold;
     color: white;
     text-align: center;
-    margin: 0 auto 2.5% auto;
+    margin: 0 auto 1% auto;
 }
 
 .arrow {
     position: relative;
     border: solid white;
-    border-width: 0 24px 24px 0;
+    border-width: 0 1.25vw 1.25vw 0;
     display: inline-block;
-    padding: 24px;
+    padding: 1.25vw;
 }
 
 .down {
@@ -255,10 +205,11 @@ section>.header-divider {
 }
 
 #projects {
-    background-color: rgba(230, 230, 230, 1);
+    background-color: rgba(255, 255, 255, 1);
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 2.5%;
+    color: rgba(50, 50, 50, 1.0);
 }
 
 #projects-list {
@@ -290,12 +241,12 @@ section>.header-divider {
 .projects-entry-header {
     margin-top: 25px;
     margin-bottom: 0;
-    font-size: 1.5em;
+    font-size: 1.25vw;
 }
 
 .projects-entry-desc {
     margin-bottom: 0;
-    font-size: 1.15em;
+    font-size: 0.95vw;
 }
 
 .projects-entry-footer {
@@ -303,6 +254,7 @@ section>.header-divider {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    font-size: 0.85vw;
 }
 
 .projects-entry-techlist {
@@ -341,7 +293,7 @@ section>.header-divider {
 #about-me .even-section {
     /*background-color: rgb(235, 235, 235);*/
     background-color: rgba(255, 255, 255, 1.0);
-    color: black;
+    color: rgba(50, 50, 50, 1.0);
 }
 
 #personal-content {
@@ -374,7 +326,8 @@ section>.header-divider {
 .skills-entry {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5%;
+    margin-bottom: 7.5%;
+    padding: 5%;
 }
 
 .skills-entry-title {
@@ -387,21 +340,30 @@ section>.header-divider {
 
 .skills-entry-header {
     grid-column: description;
-    font-size: 1.25em;
-    font-weight: bold;
+    font-size: 1.15vw;
+    font-weight: 700;
     margin-bottom: 5%;
 }
 
 .skills-entry-img {
-    max-width: 40%;
+    max-width: 35%;
     height: auto;
 }
 
+#web-dev-icon {
+    max-width: 30%;
+}
+
+#mobile-icon {
+    max-width: 40%;
+}
+
 .skills-entry-desc {
-    align-self: center;
-    font-size: 1.15em;
+    font-size: 1vw;
+    font-weight: 500;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
 }
@@ -430,23 +392,24 @@ section>.header-divider {
 
 .experience-entry-header {
     grid-column: description;
-    font-size: 1.25em;
+    font-size: 1.15vw;
     font-weight: bold;
     margin-bottom: 1.25%;
 }
 
 .experience-entry-img {
-    max-width: 100%;
+    max-width: 12.5%;
     height: auto;
 }
 
 .experience-entry-period {
     margin-bottom: 1.25%;
+    font-size: 1vw;
 }
 
 .experience-entry-desc {
     align-self: center;
-    font-size: 1.15em;
+    font-size: 0.95vw;
     text-align: center;
 }
 
@@ -476,23 +439,25 @@ section>.header-divider {
     height: auto;
     border-radius: 5%;
     background-color: white;
-    margin-bottom: 5%;
+    margin-bottom: 7.5%;
 }
 
 .education-entry-header {
-    font-size: 1.25em;
-    font-weight: bold;
+    font-size: 1vw;
+    font-weight: 500;
     margin-bottom: 0;
 }
 
 .education-entry-entity {
-    font-size: 1.15em;
-    font-weight: bold;
-    margin-bottom: 0;
+    font-size: 0.95vw;
+    font-weight: normal;
+    margin-bottom: 1%;
 }
 
-.experience-entry-period {
+.education-entry-period {
     margin-bottom: 1.25%;
+    font-weight: normal;
+    font-size: 0.9vw;
 }
 
 #interests-desc {
@@ -528,7 +493,7 @@ section>.header-divider {
 }
 
 #contact>p {
-    font-size: 1.5em;
+    font-size: 1.25vw;
 }
 
 .contact-icon {
@@ -539,18 +504,16 @@ section>.header-divider {
 #social-media-list {
     padding-left: 0;
     list-style: none;
-    display: flex;
-    justify-content: center;
 }
 
 #social-media-list>li {
-    display: block;
-    margin: 0;
+    display: inline;
+    margin: 0 1% 0 1%;
     padding: 0;
 }
 
 .social-media-icon {
-    max-width: 40%;
+    max-width: 3%;
     height: auto;
 }
 
@@ -559,11 +522,11 @@ section>.header-divider {
 }
 
 #techs-and-tools>p {
-    font-size: 1.25em;
+    font-size: 1.15vw;
 }
 
 #attributions>header {
-    font-size: 1.25em;
+    font-size: 1vw;
 }
 
 #attributions>ul {
@@ -575,6 +538,7 @@ section>.header-divider {
     --link-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 0.9vw;
 }
 
 .attribution a {
@@ -586,9 +550,83 @@ section>.header-divider {
 }
 
 #copyright {
-    font-size: 1.15em;
+    font-size: 0.9vw;
     font-weight: normal;
     text-align: right;
     padding: 0;
     margin: 1% 0 0 0;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin: auto;
+    }
+
+    .arrow {
+        border-width: 0 8px 8px 0;
+        padding: 8px;
+    }
+
+    #projects-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-entry {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .experience-entry-img {
+        max-height: 40%;
+        width: auto;
+        margin-top: 2.5%;
+    }
+
+    #education-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #interests-list>li {
+        display: block;
+        margin: 5% 0 5% 0;
+    }
+
+    #social-media-list>li {
+        margin: 0 1.5% 0 1.5%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .skills-entry {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .skills-entry-img {
+        max-height: 60%;
+        width: auto;
+    }
+
+    #web-dev-icon {
+        max-height: 60%;
+        width: auto;
+    }
+
+    #mobile-icon {
+        max-height: 65%;
+        width: auto;
+    }
+
+    .skills-entry-desc {
+        margin-top: 0;
+    }
 }
