@@ -7,7 +7,7 @@ body {
 
 #website-header {
     /* background: linear-gradient( 180deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.9)); */
-    background-image: url("../img/header_background.png");
+    background-image: url("../img/header_background_1.jpg");
     background-repeat: no-repeat;
     background-color: black;
     background-size: cover;
@@ -50,12 +50,9 @@ body {
 }
 
 #profile-header {
-    font-size: 1.75vw;
-    margin-bottom: 0;
-}
-
-#profile-description {
     font-size: 1.5vw;
+    font-weight: normal;
+    margin-bottom: 15%;
 }
 
 #navbar {
@@ -319,7 +316,14 @@ section > .header-divider {
 }
 
 .projects-entry-techlist > li {
-    padding: 0 5px 0 5px;
+    padding: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: normal;
+    font-size: 0.75vw;
+    background: grey;
+    border-radius: 50%;
+    color: white;
 }
 
 #about-me {
@@ -601,7 +605,8 @@ section > .header-divider {
     font-size: 1.15vw;
 }
 
-#attributions > header {
+#attributions > h1 {
+    font-weight: normal;
     font-size: 1vw;
 }
 
