@@ -11,6 +11,9 @@ body {
     background-repeat: no-repeat;
     background-color: black;
     background-size: cover;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     width: 100%;
     height: 100%;
@@ -20,10 +23,13 @@ body {
 }
 
 #profile {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     max-width: 40%;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     color: white;
@@ -54,6 +60,9 @@ body {
 
 #navbar {
     margin: auto;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +99,7 @@ main {
     margin-bottom: 0;
 }
 
-main>article {
+main > article {
     padding: 7.5% 0 0 0;
 }
 
@@ -99,12 +108,12 @@ main>article {
     font-weight: bold;
 }
 
-article>.header-divider {
+article > .header-divider {
     max-width: 80%;
     margin-top: 2.5%;
 }
 
-section>.header-divider {
+section > .header-divider {
     max-width: 80%;
     margin-top: 1.5%;
     margin-bottom: 5%;
@@ -121,16 +130,19 @@ section>.header-divider {
 }
 
 #content-intro {
-    background: linear-gradient(180deg, rgba(15,15,15, 1.0), rgba(15,15,15, 0.9));
+    background: linear-gradient(180deg, rgba(15, 15, 15, 1.0), rgba(15, 15, 15, 0.9));
     margin: 0;
     padding: 5% 0 5% 0;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#content-intro>header {
+#content-intro > header {
     max-width: 50%;
     font-size: 2vw;
     font-weight: bold;
@@ -154,8 +166,25 @@ section>.header-divider {
 
 .pointer-down {
     animation-name: point-down;
+    -webkit-animation-name: point-down;
     animation-duration: 600ms;
+    -webkit-animation-duration: 600ms;
     animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes point-down {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 15%;
+    }
+
+    100% {
+        top: 0;
+    }
 }
 
 @keyframes point-down {
@@ -178,8 +207,11 @@ section>.header-divider {
 
 .small-increasing:hover {
     animation-name: increase-small;
+    -webkit-animation-name: increase-small;
     animation-duration: 100ms;
+    -webkit-animation-duration: 100ms;
     animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .medium-increasing {
@@ -195,12 +227,14 @@ section>.header-divider {
 @keyframes increase-small {
     100% {
         transform: scale(1.1);
+        -webkit-transform: scale(1.1);
     }
 }
 
 @keyframes increase-medium {
     100% {
         transform: scale(1.5);
+        -webkit-transform: scale(1.5);
     }
 }
 
@@ -214,6 +248,9 @@ section>.header-divider {
 
 #projects-list {
     width: 100%;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -221,6 +258,9 @@ section>.header-divider {
 }
 
 .projects-entry {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,9 +268,13 @@ section>.header-divider {
     padding: 5px 1% 5px 1%;
 }
 
-.projects-entry a {
+.project-link {
     display: inline;
     text-decoration: none;
+}
+
+.project-link:visited {
+    color: inherit;
 }
 
 .projects-entry-img {
@@ -250,6 +294,9 @@ section>.header-divider {
 }
 
 .projects-entry-footer {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -259,6 +306,9 @@ section>.header-divider {
 
 .projects-entry-techlist {
     padding-left: 0; /* remove list indent */
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -268,25 +318,25 @@ section>.header-divider {
     margin-bottom: 0;
 }
 
-.projects-entry-techlist>li {
+.projects-entry-techlist > li {
     padding: 0 5px 0 5px;
 }
 
 #about-me {
-    background-color: rgba(15,15,15, 1.0);
+    background-color: rgba(15, 15, 15, 1.0);
 }
 
-#about-me>header {
+#about-me > header {
     color: white;
     margin-bottom: 7.5%;
 }
 
-#about-me>section {
+#about-me > section {
     padding: 4.5% 5% 2.5% 5%;
 }
 
 #about-me .odd-section {
-    background-color: rgba(23,21,24, 1.0);
+    background-color: rgba(23, 21, 24, 1.0);
     color: white;
 }
 
@@ -298,6 +348,9 @@ section>.header-divider {
 
 #personal-content {
     padding: 0 7.5% 0 7.5%;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -309,7 +362,7 @@ section>.header-divider {
     text-align: justify;
 }
 
-#personal-content>img {
+#personal-content > img {
     max-width: 40%;
     height: auto;
     margin-top: 2%;
@@ -317,13 +370,17 @@ section>.header-divider {
 }
 
 #skills-grid {
+    display: -moz-grid;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 100%;
-    grid-auto-rows: 100%;
     padding: 0 20% 0 20%;
 }
 
 .skills-entry {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     margin-bottom: 7.5%;
@@ -333,6 +390,9 @@ section>.header-divider {
 .skills-entry-title {
     grid-column: title;
     align-self: center;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -361,6 +421,9 @@ section>.header-divider {
 .skills-entry-desc {
     font-size: 1vw;
     font-weight: 500;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -369,13 +432,17 @@ section>.header-divider {
 }
 
 #experience-grid {
+    display: -moz-grid;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 100%;
     padding: 0 15% 0 15%;
 }
 
 .experience-entry {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -385,6 +452,9 @@ section>.header-divider {
 .experience-entry-title {
     grid-column: title;
     align-self: center;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -420,12 +490,18 @@ section>.header-divider {
 
 #education-list {
     width: 100%;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .education-entry {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
     max-width: 30%;
     flex-direction: column;
@@ -473,7 +549,7 @@ section>.header-divider {
     margin-top: 2.5%;
 }
 
-.interests-list>li {
+.interests-list > li {
     display: inline;
     margin: 0 2.5% 0 2.5%;
 }
@@ -492,7 +568,7 @@ section>.header-divider {
     color: white;
 }
 
-#contact>p {
+#contact > p {
     font-size: 1.25vw;
 }
 
@@ -506,7 +582,7 @@ section>.header-divider {
     list-style: none;
 }
 
-#social-media-list>li {
+#social-media-list > li {
     display: inline;
     margin: 0 1% 0 1%;
     padding: 0;
@@ -521,15 +597,15 @@ section>.header-divider {
     margin-top: 3.5%;
 }
 
-#techs-and-tools>p {
+#techs-and-tools > p {
     font-size: 1.15vw;
 }
 
-#attributions>header {
+#attributions > header {
     font-size: 1vw;
 }
 
-#attributions>ul {
+#attributions > ul {
     padding-left: 0;
     list-style: none;
 }
@@ -593,12 +669,12 @@ section>.header-divider {
         align-items: center;
     }
 
-    #interests-list>li {
+    #interests-list > li {
         display: block;
         margin: 5% 0 5% 0;
     }
 
-    #social-media-list>li {
+    #social-media-list > li {
         margin: 0 1.5% 0 1.5%;
     }
 }
