@@ -2,10 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
 }
 
 @media (max-width: 600px) {
-    nav {
+    #navbar {
         flex-direction: column;
     }
 
@@ -117,6 +118,10 @@ body {
     color: white;
 }
 
+.nav-link:hover {
+    background-color: black;
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -195,6 +200,58 @@ section>.header-divider {
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+.pointer-down {
+    animation-name: point-down;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes point-down {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 15%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.small-increasing {
+    position: relative;
+}
+
+.small-increasing:hover {
+    animation-name: increase-small;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+}
+
+.medium-increasing {
+    position: relative;
+}
+
+.medium-increasing:hover {
+    animation-name: increase-medium;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes increase-small {
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes increase-medium {
+    100% {
+        transform: scale(1.5);
+    }
 }
 
 #projects {
@@ -474,23 +531,31 @@ section>.header-divider {
     font-size: 1.5em;
 }
 
+.contact-icon {
+    max-width: 3%;
+    height: auto;
+}
+
 #social-media-list {
-    list-style: none;
     padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 #social-media-list>li {
-    display: inline;
-    margin: 0 0.5% 0 0.5%;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
-.contact-icon {
-    max-width: 2.5%;
+.social-media-icon {
+    max-width: 40%;
     height: auto;
 }
 
 #techs-and-tools {
-    margin-top: 5%;
+    margin-top: 3.5%;
 }
 
 #techs-and-tools>p {
