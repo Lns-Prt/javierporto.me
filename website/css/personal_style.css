@@ -7,7 +7,7 @@ body {
 
 #website-header {
     /* background: linear-gradient( 180deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.9)); */
-    background-image: url("../img/header_background_1.jpg");
+    background-image: url("../img/header_background.jpg");
     background-repeat: no-repeat;
     background-color: black;
     background-size: cover;
@@ -263,6 +263,7 @@ section > .header-divider {
     align-items: center;
     max-width: 30%;
     padding: 5px 1% 5px 1%;
+    margin-bottom: 5%;
 }
 
 .project-link {
@@ -657,6 +658,10 @@ section > .header-divider {
         align-items: center;
     }
 
+    .projects-entry-techlist > li {
+        padding: 1px;
+    }
+
     .experience-entry {
         flex-direction: column;
         align-items: center;
@@ -685,6 +690,11 @@ section > .header-divider {
 }
 
 @media (max-width: 1600px) {
+
+    .projects-entry-techlist > li {
+        padding: 7px;
+    }
+
     .skills-entry {
         flex-direction: column;
         justify-content: space-around;
