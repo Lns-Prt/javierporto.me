@@ -363,12 +363,13 @@ section > .header-divider {
 }
 
 #personal-desc {
-    margin-right: 5%;
+    margin-right: 7.5%;
     text-align: justify;
+    max-width: 50%;
 }
 
 #personal-content > img {
-    max-width: 40%;
+    max-width: 60%;
     height: auto;
     margin-top: 2%;
     border-radius: 2.5%;
