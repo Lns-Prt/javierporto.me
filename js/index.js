@@ -1,9 +1,6 @@
-// Get the navbar
+// Sticky navbar on scroll setup
 const navbar = document.getElementById("navbar");
-// Get the offset position of the navbar
 const sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 const setNavbar = () => {
     const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if (window.pageYOffset >= sticky && width > 768) {
@@ -13,5 +10,16 @@ const setNavbar = () => {
     }
 };
 
-// When the user scrolls the page, execute myFunction
 window.onscroll = setNavbar;
+
+
+// Background colors for project cards text containers
+const colorArray = [ "#568ED0", "#8e44ad", "#16a085", "#2c3e50", "#27ae60"];
+const projectTextContainers = document.getElementsByClassName("projects-entry-text");
+let i = 0;
+for (let container of projectTextContainers) {
+    console.log(container);
+    console.log(`Assigning ${colorArray[i]} to ${container} element.`);
+    container.style.backgroundColor = colorArray[i];
+    i = (i + 1) % colorArray.length;
+}

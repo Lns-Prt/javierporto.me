@@ -39,7 +39,7 @@ body {
     max-width: 30%;
     height: auto;
     border-style: solid;
-    border-color: grey;
+    border-color: rgba(150, 150, 150, 1.0);
     border-width: medium;
     border-radius: 50%;
 }
@@ -106,12 +106,12 @@ main > article {
 }
 
 article > .header-divider {
-    max-width: 80%;
+    max-width: 100%;
     margin-top: 2.5%;
 }
 
 section > .header-divider {
-    max-width: 80%;
+    max-width: 90%;
     margin-top: 1.5%;
     margin-bottom: 5%;
 }
@@ -237,8 +237,8 @@ section > .header-divider {
 
 #projects {
     background-color: rgba(255, 255, 255, 1);
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
     padding-bottom: 2.5%;
     color: rgba(50, 50, 50, 1.0);
 }
@@ -249,25 +249,26 @@ section > .header-divider {
     display: -ms-flex;
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 5%;
 }
 
 .projects-entry {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 30%;
-    padding: 5px 1% 5px 1%;
+    height: auto;
+    padding: 0;
     margin-bottom: 5%;
+    border: rgba(150, 150, 150, 1.0) solid 2px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 1px #AAA;
+}
+
+.projects-entry:hover {
+    box-shadow: 0 0 20px 10px #AAA;
 }
 
 .project-link {
-    display: inline;
     text-decoration: none;
 }
 
@@ -276,19 +277,32 @@ section > .header-divider {
 }
 
 .projects-entry-img {
-    max-width: 45%;
+    max-width: 450px;
     height: auto;
+    margin-bottom: 0;
+}
+
+.projects-entry hr {
+    width: 100%;
+    margin: 0;
+}
+
+.projects-entry-text {
+    padding: 5% 5% 2.5% 5%;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .projects-entry-header {
-    margin-top: 25px;
-    margin-bottom: 0;
     font-size: 1.25vw;
+}
+
+.projects-entry-header>a {
+    color: inherit;
 }
 
 .projects-entry-desc {
     margin-bottom: 0;
-    font-size: 0.95vw;
+    font-size: 0.9vw;
 }
 
 .projects-entry-footer {
@@ -322,9 +336,9 @@ section > .header-divider {
     margin-right: 5px;
     font-weight: normal;
     font-size: 0.75vw;
-    background: grey;
+    background: #3d66da;
     border-radius: 50%;
-    color: white;
+    color: inherit;
 }
 
 #about-me {
@@ -474,8 +488,12 @@ section > .header-divider {
 }
 
 .experience-entry-img {
-    max-width: 12.5%;
+    max-width: 15%;
     height: auto;
+}
+
+#bahia-soft-img {
+    border-radius: 50%;
 }
 
 .experience-entry-period {
@@ -774,7 +792,7 @@ section > .header-divider {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: 10%;
+        margin: 10% auto 0 auto;
     }
 
     .projects-entry {
@@ -783,26 +801,26 @@ section > .header-divider {
         display: -webkit-flex;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        max-width: 80%;
-        padding: 5px 1% 5px 1%;
-        margin-bottom: 10%;
+        max-width: 100%;
+        margin: 0 15% 25% 15%;
     }
 
     .projects-entry-img {
-        max-width: 45%;
+        max-width: 100%;
         height: auto;
     }
 
     .projects-entry-header {
-        margin-top: 25px;
+        margin-top: 5px;
         margin-bottom: 0;
-        font-size: 5vw;
+        font-size: 4.25vw;
     }
 
     .projects-entry-desc {
         margin-bottom: 0;
-        font-size: 4vw;
+        font-size: 3.25vw;
     }
 
     .projects-entry-footer {
@@ -813,7 +831,7 @@ section > .header-divider {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        font-size: 3vw;
+        font-size: 2.75vw;
     }
 
     .projects-entry-techlist > li {
@@ -821,7 +839,7 @@ section > .header-divider {
         margin-left: 5px;
         margin-right: 5px;
         font-weight: normal;
-        font-size: 3vw;
+        font-size: 2.75vw;
     }
 
     #about-me {
@@ -940,8 +958,6 @@ section > .header-divider {
         text-align: center;
     }
 
-    .skills
-
     #experience-grid {
         display: -moz-grid;
         display: -ms-grid;
@@ -982,6 +998,7 @@ section > .header-divider {
         max-width: 25%;
         height: auto;
         order: 1;
+        margin-bottom: 5%;
     }
 
     .experience-entry-period {
