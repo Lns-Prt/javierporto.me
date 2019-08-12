@@ -706,12 +706,12 @@ section > .header-divider {
     }
 
     #profile-name {
-        font-size: 5vw;
+        font-size: 6vw;
         margin-bottom: 0;
     }
 
     #profile-header {
-        font-size: 4vw;
+        font-size: 5vw;
         font-weight: normal;
         margin-bottom: 15%;
     }
@@ -722,27 +722,31 @@ section > .header-divider {
 
     .nav-link {
         margin: auto;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         padding: 5% 0 5% 0;
     }
 
     .article-header {
-        font-size: 6.5vw;
+        font-size: 7.5vw;
     }
 
     .section-header {
-        font-size: 5vw;
+        font-size: 6vw;
         font-weight: bold;
     }
 
     .section-desc {
-        font-size: 3vw;
+        font-size: 4vw;
         line-height: 1.75em;
+    }
+
+    #content-intro {
+        padding: 10% 0 10% 0;
     }
 
     #content-intro > header {
         max-width: 75%;
-        font-size: 5vw;
+        font-size: 7vw;
         font-weight: bold;
         color: white;
         text-align: center;
@@ -793,12 +797,12 @@ section > .header-divider {
     .projects-entry-header {
         margin-top: 25px;
         margin-bottom: 0;
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .projects-entry-desc {
         margin-bottom: 0;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .projects-entry-footer {
@@ -809,7 +813,7 @@ section > .header-divider {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .projects-entry-techlist > li {
@@ -817,7 +821,7 @@ section > .header-divider {
         margin-left: 5px;
         margin-right: 5px;
         font-weight: normal;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     #about-me {
@@ -875,7 +879,7 @@ section > .header-divider {
         display: -ms-grid;
         display: grid;
         grid-template-columns: 100%;
-        padding: 0 20% 0 20%;
+        padding: 0 5% 0 5%;
     }
 
     .skills-entry {
@@ -901,8 +905,9 @@ section > .header-divider {
 
     .skills-entry-header {
         grid-column: description;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         font-weight: 700;
+        margin-top: 5%;
         margin-bottom: 5%;
         order: 2;
     }
@@ -923,7 +928,7 @@ section > .header-divider {
     }
 
     .skills-entry-desc {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         font-weight: 500;
         display: -moz-flex;
         display: -ms-flex;
@@ -934,6 +939,8 @@ section > .header-divider {
         justify-content: center;
         text-align: center;
     }
+
+    .skills
 
     #experience-grid {
         display: -moz-grid;
@@ -965,7 +972,7 @@ section > .header-divider {
 
     .experience-entry-header {
         grid-column: description;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         font-weight: bold;
         margin-bottom: 1.25%;
         margin-top: 0;
@@ -979,12 +986,12 @@ section > .header-divider {
 
     .experience-entry-period {
         margin-bottom: 1.25%;
-        font-size: 2.75vw;
+        font-size: 3.75vw;
     }
 
     .experience-entry-desc {
         align-self: center;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         text-align: center;
     }
 
@@ -1025,13 +1032,13 @@ section > .header-divider {
     }
 
     .education-entry-header {
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: 500;
         margin-bottom: 0;
     }
 
     .education-entry-entity {
-        font-size: 2.75vw;
+        font-size: 3.75vw;
         font-weight: normal;
         margin-bottom: 1%;
     }
@@ -1039,7 +1046,7 @@ section > .header-divider {
     .education-entry-period {
         margin-bottom: 1.25%;
         font-weight: normal;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 
     #interests-desc {
@@ -1079,11 +1086,11 @@ section > .header-divider {
     }
 
     #contact > p {
-        font-size: 2.75vw;
+        font-size: 3.75vw;
     }
 
     .contact-icon {
-        max-width: 7%;
+        max-width: 8%;
         height: auto;
     }
 
@@ -1099,7 +1106,7 @@ section > .header-divider {
     }
 
     .social-media-icon {
-        max-width: 7%;
+        max-width: 8%;
         height: auto;
     }
 
@@ -1108,12 +1115,12 @@ section > .header-divider {
     }
 
     #techs-and-tools > p {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 
     #attributions > h1 {
         font-weight: normal;
-        font-size: 2.25vw;
+        font-size: 3.25vw;
     }
 
     #attributions > ul {
@@ -1126,7 +1133,7 @@ section > .header-divider {
         --link-color: white;
         padding-top: 5px;
         padding-bottom: 5px;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .attribution a {
@@ -1138,7 +1145,7 @@ section > .header-divider {
     }
 
     #copyright {
-        font-size: 2.25vw;
+        font-size: 3.25vw;
         font-weight: normal;
         text-align: center;
     }
