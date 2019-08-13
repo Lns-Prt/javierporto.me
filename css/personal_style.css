@@ -65,6 +65,7 @@ body {
     align-items: center;
     background: rgba(73, 74, 79, 1.0);
     overflow: hidden;
+    z-index: 1000;
 }
 
 .nav-link {
@@ -277,7 +278,7 @@ section > .header-divider {
 }
 
 .projects-entry-img {
-    max-width: 450px;
+    max-width: 300px;
     height: auto;
     margin-bottom: 0;
 }
@@ -383,7 +384,7 @@ section > .header-divider {
 }
 
 #personal-content > img {
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
     margin-top: 2%;
     border-radius: 2.5%;
