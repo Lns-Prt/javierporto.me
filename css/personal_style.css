@@ -479,6 +479,7 @@ section > .header-divider {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 75%;
 }
 
 .experience-entry-header {
@@ -503,10 +504,18 @@ section > .header-divider {
 }
 
 .experience-entry-desc {
+    margin-bottom: 0;
     align-self: center;
     font-size: 0.95vw;
-    text-align: center;
+    text-align: justify;
 }
+
+.experience-entry-title ul {
+    margin-top: 1.25%;
+    font-size: 0.95vw;
+    text-align: left;
+}
+
 
 #education {
     padding-left: 0;
@@ -1010,7 +1019,12 @@ section > .header-divider {
     .experience-entry-desc {
         align-self: center;
         font-size: 3.5vw;
-        text-align: center;
+        text-align: justify;
+    }
+
+    .experience-entry-title ul {
+        margin-top: 5%;
+        font-size: 3.5vw;
     }
 
     #education {
