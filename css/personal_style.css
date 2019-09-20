@@ -765,6 +765,10 @@ section > .header-divider {
         padding: 5% 0 5% 0;
     }
 
+    .nav-link:hover {
+        background-color: initial;
+    }
+
     .article-header {
         font-size: 7.5vw;
     }
