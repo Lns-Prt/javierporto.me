@@ -1,12 +1,8 @@
-const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-
 // Vanilla JavaScript Smooth Scroll to Anchor
 // @ https://perishablepress.com/vanilla-javascript-scroll-anchor/
-if (width > 768) {
-    (function() {
-        scrollTo();
-    })();
-}
+(function() {
+    scrollTo();
+})();
 
 function scrollTo() {
     var links = document.getElementsByTagName('a');
@@ -19,22 +15,25 @@ function scrollTo() {
 }
 
 function scrollAnchors(e, respond = null) {
-    const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-    e.preventDefault();
-    var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
-    const targetAnchor = document.querySelector(targetID);
-    if (!targetAnchor) return;
-    const originalTop = distanceToTop(targetAnchor);
-    window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-    const checkIfDone = setInterval(function() {
-        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-        if (distanceToTop(targetAnchor) === 0 || atBottom) {
-            targetAnchor.tabIndex = '-1';
-            targetAnchor.focus();
-            window.history.pushState('', '', targetID);
-            clearInterval(checkIfDone);
-        }
-    }, 100);
+    const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if (width > 768) {
+        const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+        e.preventDefault();
+        var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+        const targetAnchor = document.querySelector(targetID);
+        if (!targetAnchor) return;
+        const originalTop = distanceToTop(targetAnchor);
+        window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+        const checkIfDone = setInterval(function() {
+            const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+            if (distanceToTop(targetAnchor) === 0 || atBottom) {
+                targetAnchor.tabIndex = '-1';
+                targetAnchor.focus();
+                window.history.pushState('', '', targetID);
+                clearInterval(checkIfDone);
+            }
+        }, 100);
+    }
 }
 
 
@@ -42,6 +41,7 @@ function scrollAnchors(e, respond = null) {
 const navbar = document.getElementById("navbar");
 const sticky = navbar.offsetTop;
 const setNavbar = () => {
+    const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if (window.pageYOffset >= sticky && width > 768) {
             navbar.classList.add("sticky", "translucent")
     } else {
