@@ -1,4 +1,4 @@
-// Vanilla JavaScript Smooth Scroll to Anchor
+// Vanilla JavaScript Scroll to Anchor
 // @ https://perishablepress.com/vanilla-javascript-scroll-anchor/
 (function() {
     scrollTo();
