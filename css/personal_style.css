@@ -452,6 +452,11 @@ section > .header-divider {
     text-align: center;
 }
 
+#codewars-badge {
+    max-width: 100%;
+    height: auto;
+}
+
 #experience-grid {
     display: -moz-grid;
     display: -ms-grid;
@@ -703,6 +708,12 @@ section > .header-divider {
     .skills-entry-desc {
         margin-top: 0;
     }
+
+    #codewars-badge {
+        max-width: 60%;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -752,6 +763,10 @@ section > .header-divider {
         margin: auto;
         font-size: 4.5vw;
         padding: 5% 0 5% 0;
+    }
+
+    .nav-link:hover {
+        background-color: initial;
     }
 
     .article-header {
@@ -966,6 +981,11 @@ section > .header-divider {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    #codewars-badge {
+        max-width: 100%;
+        height: auto;
     }
 
     #experience-grid {
