@@ -452,6 +452,11 @@ section > .header-divider {
     text-align: center;
 }
 
+#codewars-badge {
+    max-width: 100%;
+    height: auto;
+}
+
 #experience-grid {
     display: -moz-grid;
     display: -ms-grid;
@@ -479,7 +484,15 @@ section > .header-divider {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 75%;
 }
+
+.experience-entry-title ul {
+    margin-top: 1.25%;
+    font-size: 0.95vw;
+    text-align: left;
+ }
+
 
 .experience-entry-header {
     grid-column: description;
@@ -503,9 +516,10 @@ section > .header-divider {
 }
 
 .experience-entry-desc {
+    margin-bottom: 0;
     align-self: center;
     font-size: 0.95vw;
-    text-align: center;
+    text-align: justify;
 }
 
 #education {
@@ -693,6 +707,11 @@ section > .header-divider {
 
     .skills-entry-desc {
         margin-top: 0;
+    }
+
+    #codewars-badge {
+        max-width: 60%;
+        height: auto;
     }
 }
 
@@ -959,6 +978,11 @@ section > .header-divider {
         text-align: center;
     }
 
+    #codewars-badge {
+        max-width: 100%;
+        height: auto;
+    }
+
     #experience-grid {
         display: -moz-grid;
         display: -ms-grid;
@@ -1010,7 +1034,12 @@ section > .header-divider {
     .experience-entry-desc {
         align-self: center;
         font-size: 3.5vw;
-        text-align: center;
+        text-align: justify;
+    }
+
+    .experience-entry-title ul {
+        margin-top: 5%;
+        font-size: 3.5vw;
     }
 
     #education {
