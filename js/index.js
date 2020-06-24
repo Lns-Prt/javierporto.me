@@ -59,3 +59,10 @@ for (let container of projectTextContainers) {
     container.style.backgroundColor = colorArray[i];
     i = (i + 1) % colorArray.length;
 }
+
+
+// Header banner arrow animation begins after delay
+const headerArrow = document.getElementById("headerArrow");
+setTimeout(() => {
+    headerArrow.classList.add("pointer-down");
+}, 4000);
